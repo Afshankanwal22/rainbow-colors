@@ -1,7 +1,7 @@
 const colorBox = document.getElementById('colorBox');
  const hoverSound = document.getElementById('hoverSound');
  let audioUnlocked = false;
-document.body.addEventListener('click', function(){
+document.body.addEventListener('click', () => {
       if (!audioUnlocked) {
         hoverSound.play().then(() => {
           hoverSound.pause();
