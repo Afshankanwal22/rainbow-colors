@@ -1,0 +1,40 @@
+ body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #ff7f50, #ff6347, #ff4500);
+      animation: rainbow 5s linear infinite;
+    }
+
+    .color-effect {
+      width: 500px;
+      height: 500px;
+      border-radius: 10px;
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+        transition: background 2s ease;
+    }
+     .animate-gradient {
+      background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 1400% 1400%;
+      animation: rainbow 10s ease infinite;
+    }
+
+    @keyframes rainbow {
+      0% {
+        background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+      }
+      50% {
+        background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+      }
+      100% {
+        background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+      }
+    }
